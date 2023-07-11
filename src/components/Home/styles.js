@@ -131,10 +131,33 @@ export const Card = styled.div`
   border-radius: 30px;
   border: 1.33px solid ${({ theme }) => theme.rose_dark};
   background: ${({ theme }) => theme.bg_box};
+  transition: 0.3s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+  }
 
   @media (max-width: 768px) {
     width: 90%;
     height: 200px;
+  }
+`;
+
+export const CardBorderBottomHover = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: ${({ theme }) => theme.rose_dark};
+  transform: scaleX(0);
+  transition: 0.2s;
+
+  ${Card}:hover & {
+    transform: scaleX(1);
   }
 `;
 

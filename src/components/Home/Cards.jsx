@@ -1,4 +1,4 @@
-import { AcolhimentoIcon, AutoconhecimentoIcon, Card, CardText, Cards, RelacionamentoIcon, SexualidadeIcon } from './styles'
+import { AcolhimentoIcon, AutoconhecimentoIcon, Card, CardBorderBottomHover, CardText, Cards, RelacionamentoIcon, SexualidadeIcon } from './styles'
 
 const CardsComponent = () => {
   return (
@@ -8,24 +8,28 @@ const CardsComponent = () => {
         <CardText>
           Relacionamento
         </CardText>
+        <CardBorderBottomHover />
       </Card>
       <Card>
         <AutoconhecimentoIcon />
         <CardText>
           Autoconhecimento
         </CardText>
+        <CardBorderBottomHover />
       </Card>
       <Card>
         <SexualidadeIcon />
         <CardText>
           Sexualidade
         </CardText>
+        <CardBorderBottomHover />
       </Card>
       <Card>
         <AcolhimentoIcon />
         <CardText>
           Acolhimento
         </CardText>
+        <CardBorderBottomHover />
       </Card>
     </Cards>
   )
