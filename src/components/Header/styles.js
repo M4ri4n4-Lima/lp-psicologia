@@ -69,6 +69,7 @@ export const LocalWrapper = styled(LinkRouter)`
   display: flex;
   align-items: center;
   gap: 10px;
+  color: ${({ theme }) => theme.grey};
 `;
 
 export const LocalIcon = styled(CiLocationOn)`
@@ -81,6 +82,7 @@ export const TelWrapper = styled(LinkRouter)`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: ${({ theme }) => theme.grey};
 `;
 
 export const TelIcon = styled(BsTelephone)`
