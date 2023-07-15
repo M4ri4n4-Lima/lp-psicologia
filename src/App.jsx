@@ -10,7 +10,7 @@ import BoxesInfo from './components/BoxesInfo/BoxesInfo';
 import Services from './components/Services/Services';
 import Faq from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
-import { useState } from 'react';
+import { ActiveProvider } from './context/ActiveProvider';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -22,12 +22,12 @@ const Container = styled.div`
 `;
 
 const App = () => {
-  const [active, setIsActive] = useState(false);
-
   return (
       <Container>
-        <Header active={active} setActive={setIsActive} />
-        <Home active={active} />
+        <ActiveProvider>
+          <Header />
+          <Home />
+        </ActiveProvider>
         <CardsComponent />
         <About />
         <Therapy />

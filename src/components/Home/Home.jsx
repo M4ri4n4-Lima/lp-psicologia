@@ -1,8 +1,13 @@
 /* eslint-disable react/prop-types */
 import { H1, H2, H3, HomeContainer, Image, TextInfo, TextSection, BottomBG } from "./styles";
 import ButtonWhatsApp from "../ButtonWhatsApp/ButtonWhatsApp";
+import { useContext } from "react";
+import { ActiveContext } from "../../context/ActiveProvider";
 
-const Home = ({ active }) => {
+const Home = () => {
+  const { active } = useContext(ActiveContext);
+  console.log(active);
+  
   return (
     <HomeContainer id="home" $open={active}>
       <BottomBG />

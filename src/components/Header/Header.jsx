@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, NavLink, TelIcon, TelWrapper } from './styles'
 import { Divide as Hamburger } from 'hamburger-react'
 import { Link } from 'react-scroll'
+import { ActiveContext } from '../../context/ActiveProvider'
 
-const Header = ({ active, setActive}) => {
+const Header = () => {
   const [widthViewPort, setWidthViewPort] = useState(window.innerWidth);
-
+  const {active, setIsActive: setActive } = useContext(ActiveContext);
+  
   // Desativar o overflow do body quando o menu mobile estiver aberto
   if (active) {
     document.body.style.overflow = 'hidden';
