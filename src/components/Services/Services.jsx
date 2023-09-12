@@ -1,5 +1,6 @@
-import { Agenda, BottomContainer, BottomTitle, Clock, ItemWrapper, Online, ServicesContainer, TextWrapper, Title, Text, TopContainer } from './styles'
+import { Agenda, BottomContainer, BottomTitle, Clock, ItemWrapper, Online, ServicesContainer, TextWrapper, Title, Text, TopContainer, ButtonWrapper } from './styles'
 import ButtonWhatsApp from '../ButtonWhatsApp/ButtonWhatsApp'
+import { DoctoraliaAnchor } from '../Doctoralia/Doctoralia'
 
 const Services = () => {
   return (
@@ -27,7 +28,12 @@ const Services = () => {
             Atendimento individualizado e tratamento focado, permitindo que você construa a melhor versão de si mesmo!
           </Text>
         </TextWrapper>
-        <ButtonWhatsApp light={true} />
+        <ButtonWrapper>
+          <DoctoraliaAnchor>
+            Mariama Sá de Lima - Doctoralia.com.br
+          </DoctoraliaAnchor>
+          <ButtonWhatsApp light={true} />
+        </ButtonWrapper>
       </BottomContainer>
     </ServicesContainer>
   )

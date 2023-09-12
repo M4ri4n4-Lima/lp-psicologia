@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useContext } from 'react'
-import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, NavLink, TelIcon, TelWrapper } from './styles'
+import { HeaderContainer, LocalIcon, LocalTelSection, LocalWrapper, LogoIcon, NavBar, RightSection, RightText, NavLink, } from './styles'
 import { Divide as Hamburger } from 'hamburger-react'
 import { Link } from 'react-scroll'
 import { ActiveContext } from '../../context/ActiveProvider'
@@ -29,10 +29,6 @@ const Header = () => {
             <LocalIcon />
             <RightText>Av República do Líbano, 251, Recife PE</RightText>
           </LocalWrapper>
-          <TelWrapper to={'https://api.whatsapp.com/send?phone=5581987274688&text=Ol%C3%A1%20Mariana!%20Gostaria%20de%20agendar%20uma%20consulta!'} target='blank'>
-            <TelIcon />
-            <RightText>(81) 98727-4688</RightText>
-          </TelWrapper>
         </LocalTelSection>
         <NavBar $open={active}>
           <NavLink>

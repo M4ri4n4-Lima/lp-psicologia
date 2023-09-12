@@ -1,6 +1,8 @@
 const theme = () => {
   return {
     logo_color: '#d5c2dd',
+    blue: '#3D83DF',
+    blue_dark: '#224d85',
     rose: '#C783E3',
     rose_2: '#F6EDFF',
     rose_dark: '#A161BC',

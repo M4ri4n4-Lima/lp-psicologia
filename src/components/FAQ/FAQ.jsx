@@ -13,7 +13,6 @@ import {
   BoxTitle,
   BoxSubdescription,
   BoxDescription,
-  WhatsApp,
   Splash3,
   Splash2
 } from './styles';
@@ -76,18 +75,6 @@ const Faq = () => {
           </BoxSubdescription>
           <BoxDescription>
             marianalimapsicologia@gmail.com
-          </BoxDescription>
-        </BoxWrapper>
-        <BoxWrapper>
-          <BoxTitleSection>
-            <WhatsApp />
-            <BoxTitle>WhatsApp</BoxTitle>
-          </BoxTitleSection>
-          <BoxSubdescription>
-            Envie sua dúvida por WhatsApp
-          </BoxSubdescription>
-          <BoxDescription>
-            (81) 98727-4688
           </BoxDescription>
         </BoxWrapper>
       </RightSectionWrapper>

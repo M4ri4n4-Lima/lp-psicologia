@@ -11,6 +11,7 @@ import Services from './components/Services/Services';
 import Faq from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import { ActiveProvider } from './context/ActiveProvider';
+import { DoctoraliaAnchor } from './components/Doctoralia/Doctoralia';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -28,6 +29,7 @@ const App = () => {
           <Header />
           <Home />
         </ActiveProvider>
+        <DoctoraliaAnchor>Mariana Sá de Lima - Doctoralia.com.br</DoctoraliaAnchor>
         <CardsComponent />
         <About />
         <Therapy />

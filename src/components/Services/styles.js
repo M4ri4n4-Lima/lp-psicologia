@@ -78,6 +78,24 @@ export const BottomContainer = styled.div`
   }
 `;
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;

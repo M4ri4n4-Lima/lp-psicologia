@@ -19,6 +19,7 @@ export const HomeContainer = styled.div`
   position: relative;
   background: ${({ theme }) => theme.rose_dark_2};
   gap: 70px;
+  margin-bottom: 100px;
 
   @media (max-width: 811px) {
     gap: 0;
